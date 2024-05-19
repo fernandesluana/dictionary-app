@@ -23,7 +23,7 @@ class WordInfoViewModel @Inject constructor(
     private val getWordInfo: GetWordInfo
 ): ViewModel() {
 
-    private val _searchQuery = mutableStateOf<String>("")
+    private val _searchQuery = mutableStateOf("")
     val searchQuery: State<String> = _searchQuery
 
     private val _state = mutableStateOf(WordInfoState())
